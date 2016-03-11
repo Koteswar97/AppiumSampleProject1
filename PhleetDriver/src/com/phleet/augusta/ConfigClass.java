@@ -25,6 +25,7 @@ public class ConfigClass {
 		capabilities.setCapability("app", "com.doorstepdelivery.phleetdriver");
 		capabilities.setCapability("noReset", true);
 		IOSDriver wd=new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);
+		
 		wd.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		return wd;
 		
